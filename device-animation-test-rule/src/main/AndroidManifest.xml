@@ -1,0 +1,9 @@
+<manifest
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.victoralbertos.device_animation_test_rule">
+
+  <uses-sdk tools:overrideLibrary="android.support.test.uiautomator.v18"/>
+
+  <application/>
+
+</manifest>
