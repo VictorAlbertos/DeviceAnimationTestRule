@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+
 group='com.github.VictorAlbertos'
+version='0.0.1'
 
 android {
   compileSdkVersion 24
@@ -11,6 +13,7 @@ android {
     targetSdkVersion 24
     versionCode 1
     versionName "1.0"
+    archivesBaseName = "DeviceAnimationTestRule"
   }
   buildTypes {
     release {
