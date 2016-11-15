@@ -60,7 +60,8 @@ public final class DeviceAnimationTestRule implements TestRule {
         .executeShellCommand(
             "pm grant "
                 + InstrumentationRegistry.getInstrumentation().getTargetContext().getPackageName()
-                + " android.permission.SET_ANIMATION_SCALE"
+                + " "
+                + ANIMATION_PERMISSION
         );
 
     Context context = instrumentation.getContext();
