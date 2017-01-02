@@ -39,3 +39,6 @@ Declare `DeviceAnimationTestRule` as an static field annotated with `@ClassRule`
 @ClassRule static public DeviceAnimationTestRule
       deviceAnimationTestRule = new DeviceAnimationTestRule();
 ```
+## Limitation
+
+As it has been documented in this [issue](https://github.com/VictorAlbertos/DeviceAnimationTestRule/issues/4#issuecomment-269915397), you need to run your tests on devices upon on API 21.  
