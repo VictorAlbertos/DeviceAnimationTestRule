@@ -35,7 +35,15 @@ Add to Android manifest the next permission:
 
 Declare `DeviceAnimationTestRule` as an static field annotated with `@ClassRule` to your suit: 
 
+Java:
 ```java
-@ClassRule static public DeviceAnimationTestRule
-      deviceAnimationTestRule = new DeviceAnimationTestRule();
+@ClassRule static public DeviceAnimationTestRule deviceAnimationTestRule = new DeviceAnimationTestRule();
+```
+or Kotlin:
+```kotlin
+ companion object {
+    @ClassRule
+    @JvmField
+    val deviceAnimationTestRule = DeviceAnimationTestRule()
+}
 ```
