@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-//  buildToolsVersion "24.0.1"
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "io.victoralbertos.deviceanimationtestrule"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

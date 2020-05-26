@@ -20,7 +20,7 @@ allprojects {
 Add to app module *gradle.build* file
 ```gradle
 dependencies {
-    androidTestImplementation 'com.github.shumidub:DeviceAnimationTestRule:0.0.5'
+    androidTestImplementation 'com.github.VictorAlbertos:DeviceAnimationTestRule:0.0.3'
 }
 ```
 
