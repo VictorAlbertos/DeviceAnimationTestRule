@@ -20,7 +20,7 @@ allprojects {
 Add to app module *gradle.build* file
 ```gradle
 dependencies {
-    androidTestCompile 'com.github.VictorAlbertos:DeviceAnimationTestRule:0.0.2'
+    androidTestImplementation 'com.github.VictorAlbertos:DeviceAnimationTestRule:0.0.3'
 }
 ```
 
@@ -35,10 +35,15 @@ Add to Android manifest the next permission:
 
 Declare `DeviceAnimationTestRule` as an static field annotated with `@ClassRule` to your suit: 
 
+Java:
 ```java
-@ClassRule static public DeviceAnimationTestRule
-      deviceAnimationTestRule = new DeviceAnimationTestRule();
+@ClassRule static public DeviceAnimationTestRule deviceAnimationTestRule = new DeviceAnimationTestRule();
 ```
-## Limitation
-
-As it has been documented in this [issue](https://github.com/VictorAlbertos/DeviceAnimationTestRule/issues/4#issuecomment-269915397), you need to run your tests on devices upon on API 21.  
+or Kotlin:
+```kotlin
+ companion object {
+    @ClassRule
+    @JvmField
+    val deviceAnimationTestRule = DeviceAnimationTestRule()
+}
+```

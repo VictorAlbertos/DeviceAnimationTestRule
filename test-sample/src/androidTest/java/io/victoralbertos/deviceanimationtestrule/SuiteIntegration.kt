@@ -13,17 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package io.victoralbertos.deviceanimationtestrule
 
-package io.victoralbertos.deviceanimationtestrule;
+import org.junit.runner.RunWith
+import org.junit.runners.Suite
+import org.junit.runners.Suite.SuiteClasses
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-
-@RunWith(Suite.class)
-@Suite.SuiteClasses({
-    DeviceAnimationDisabledTestRuleTest.class,
-    DeviceAnimationEnabledTestRuleTest.class
-})
-public final class SuiteIntegration {
-
-}
+@RunWith(Suite::class)
+@SuiteClasses(
+        DeviceAnimationDisabledTestRuleTest::class,
+        DeviceAnimationEnabledTestRuleTest::class
+)
+class SuiteIntegration
